@@ -772,9 +772,12 @@ display: inline-flex;
  	width: 100%;
  	background: #1A1A1A;
  	height: 75px;
- 	display: -webkit-inline-box;
-display: -ms-inline-flexbox;
-display: inline-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
  }
 
  .footer-logo {
@@ -817,6 +820,16 @@ display: inline-flex;
  .footer-social a:hover {
  	color: #1188ff;
  }
+
+.footer-align {
+    display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+    padding-right: 20px;
+}
+
+
+
 
 
 
@@ -1160,6 +1173,9 @@ display: inline-flex;
 #header_search_query{
   color: #000;
 }
- 
+ .footer-align {
+    display: block;
+    padding-right: 0px;
+}
 }
  /*END OF MOBILE VIEW - DO NOT MOVE*/
