@@ -20,9 +20,10 @@
 
  /* layout */
  .flex {
- 	display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
  }
-
 
  /* Navigation*/
 
@@ -36,13 +37,17 @@
 
  /* style the nav as white bar*/
  nav {
- 	display: flex;
- 	justify-content: space-between;
- 	width: 100%;
- 	margin-top: 0px;
- 	border-bottom: #dddddd;
- 	background: #1A1A1A;
- 	height: 70px;
+ 	  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-top: 0px;
+  border-bottom: #dddddd;
+  background: #1A1A1A;
+  height: 70px;
  }
 
  /* styling the menu */
@@ -164,23 +169,32 @@
 
  a.imgbounds:hover img {
  	opacity: 0.6;
- 	transform: scale(1.2);
- 	transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
  }
 
 
  /* Mobile nav */
 
  .menu-toggle-button {
- 	font-size: 25px;
- 	padding-top: 50px;
- 	color: white;
- 	cursor: pointer;
- 	display: none;
- 	user-select: none;
- 	margin-left: auto;
- 	align-self: center;
- 	padding-right: 30px;
+  font-size: 25px;
+  padding-top: 50px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+          user-select: none;
+  margin-left: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-right: 30px;
  }
 
  .menu-toggle-button:hover {
@@ -206,25 +220,29 @@
 
  /* Centered text */
  .centered {
- 	position: absolute;
- 	top: 50%;
- 	left: 50%;
- 	transform: translate(-50%, -50%);
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 
- 	font-size: 5em;
- 	font-family: 'Long Cang', cursive;
- 	text-shadow: 0px 2px 10px black;
+  font-size: 5em;
+  font-family: 'Long Cang', cursive;
+  text-shadow: 0px 2px 10px black;
  }
 
  .index-centered {
- 	position: absolute;
- 	top: 50%;
- 	left: 50%;
- 	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 
- 	font-size: 3em;
- 	font-family: 'Long Cang', cursive;
- 	text-shadow: 0px 2px 10px black;
+  font-size: 3em;
+  font-family: 'Long Cang', cursive;
+  text-shadow: 0px 2px 10px black;
  }
 
  mark {
@@ -497,7 +515,9 @@ h6{
 
  /* travel info */
  .travelinfo-box {
- 	display: inline-flex;
+  display: -webkit-inline-box;    
+display: -ms-inline-flexbox;    
+display: inline-flex;
  }
 
  .travelinfo-box li {
@@ -507,7 +527,9 @@ h6{
 
  /* phrases info */
  .phrases-box {
- 	display: inline-flex;
+  display: -webkit-inline-box;    
+display: -ms-inline-flexbox;    
+display: inline-flex;
  	list-style: none;
  	position: relative;
  }
@@ -610,7 +632,9 @@ h6{
  }
 
  .refgrid {
- 	display: inline-table;
+ display: inline-table;
+display: -ms-inline-flexbox;    
+display: inline-flex;
  	width: 19%;
  	padding-top: 1%;
  	padding-bottom: 1%;
@@ -623,11 +647,12 @@ h6{
 
  .refgrid .desc {
 	 font-family: 'Noto Sans', sans-serif;
- 	padding: 10px;
- 	font-size: 12px;
- 	text-align: center;
- 	background-color: white;
- 	box-shadow: 0px -50px 25px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  font-size: 12px;
+  text-align: center;
+  background-color: white;
+  -webkit-box-shadow: 0px -50px 25px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px -50px 25px 5px rgba(0, 0, 0, 0.1);
  }
 
  .refgrid .desc h1 {
@@ -747,7 +772,9 @@ h6{
  	width: 100%;
  	background: #1A1A1A;
  	height: 75px;
- 	display: inline-flex;
+ 	display: -webkit-inline-box;
+display: -ms-inline-flexbox;
+display: inline-flex;
  }
 
  .footer-logo {
@@ -759,7 +786,9 @@ h6{
  	align-content: center;
  	padding-top: 35px;
  	padding-left: 50px;
- 	display: inline-flex;
+ 	display: -webkit-inline-box;
+display: -ms-inline-flexbox;
+display: inline-flex;
  }
 
  .footer-links a {
@@ -1128,7 +1157,9 @@ h6{
  	.footer-social a {
  		padding: 10%;
  	}
-
+#header_search_query{
+  color: #000;
+}
  
-
+}
  /*END OF MOBILE VIEW - DO NOT MOVE*/
