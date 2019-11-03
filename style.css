@@ -1,0 +1,1133 @@
+ /* Reset styles */
+ * {
+ 	margin: 0px;
+ 	padding: 0px;
+ 	box-sizing: border-box;
+ }
+
+ nav,
+ body {
+ 	font-family: 'Noto Sans', sans-serif;
+ }
+
+ /* Search area styles */
+ input:focus,
+ select:focus,
+ textarea:focus,
+ button:focus {
+ 	outline: none;
+ }
+
+ /* layout */
+ .flex {
+ 	display: flex;
+ }
+
+
+ /* Navigation*/
+
+
+ /* For Top right logo icon */
+ .logo img {
+ 	width: 150px;
+ 	margin-top: 10px;
+ 	margin-left: 15px;
+ }
+
+ /* style the nav as white bar*/
+ nav {
+ 	display: flex;
+ 	justify-content: space-between;
+ 	width: 100%;
+ 	margin-top: 0px;
+ 	border-bottom: #dddddd;
+ 	background: #1A1A1A;
+ 	height: 70px;
+ }
+
+ /* styling the menu */
+ nav > ul {
+ 	margin: 0px;
+ 	margin-right: 20px;
+ 	padding: 0px;
+ 	text-align: right;
+ 	height: 100%;
+ 	display: flex;
+ 	justify-content: center;
+ 	list-style-type: none;
+ }
+
+ /* menu list items */
+
+ nav > ul > li {
+ 	margin-left: 50px;
+ 	height: 100%;
+ 	display: flex;
+ }
+
+ nav > ul li:hover > a {
+ 	color: #1188ff;
+ }
+
+ /* menu list items link styles */
+ nav > ul li a {
+ 	text-decoration: none;
+ 	color: white;
+ 	font-size: 15px;
+ 	align-self: center;
+ }
+
+ /* Mega menu */
+
+ nav > ul li .mega-menu {
+ 	position: absolute;
+ 	color: black;
+ 	background: white;
+ 	width: 100%;
+ 	left: 0;
+ 	top: 70px;
+ 	padding: 10px;
+ 	display: none;
+ 	box-sizing: border-box;
+ 	border-top: 1px solid #dddddd;
+ }
+
+ nav > ul li .mega-menu a {
+ 	padding: 10px;
+ 	text-align: center;
+ 	color: black;
+ 	background: white;
+ 	box-sizing: border-box;
+ 	border-top: 1px solid #dddddd;
+ }
+
+ nav > ul li:hover .mega-menu {
+ 	display: flex;
+ }
+
+ /*This applies to both top nav bar and footer*/
+ /* Works in mobile menu as well! */
+ .active {
+ 	color: #1188ff !important;
+ }
+
+ /* Do not move this */
+
+ input {
+ 	border: 1px solid #eeeeee;
+ 	padding: 10px 10px 10px 50px;
+ 	border-radius: 100px;
+ 	font-size: 15px;
+ 	color: white;
+ 	background: none;
+ }
+
+ i.fa-search {
+ 	margin-right: -40px;
+ 	padding-left: 20px;
+ 	font-size: 15px;
+ }
+
+
+ .imgbounds {
+ 	margin: 0px;
+ }
+
+ a.imgbounds {
+ 	overflow: hidden;
+ 	display: block;
+ 	height: 150px;
+ 	width: 100%;
+ 	position: relative;
+ 	background: black;
+ }
+
+ a.imgbounds p {
+ 	color: white;
+ 	text-shadow: (0px 2px black);
+ 	font-size: 25px;
+ 	position: absolute;
+ 	text-align: center;
+ 	margin: auto;
+ 	width: 100%;
+ 	top: 40%;
+
+ }
+
+ a.imgbounds img {
+ 	width: 100%;
+ 	object-fit: cover;
+ 	height: 100%;
+ 	transition: all 0.5s ease-in-out;
+ }
+
+ a.imgbounds:hover img {
+ 	opacity: 0.6;
+ 	transform: scale(1.2);
+ 	transition: all 0.5s ease-in-out;
+ }
+
+
+ /* Mobile nav */
+
+ .menu-toggle-button {
+ 	font-size: 25px;
+ 	padding-top: 50px;
+ 	color: white;
+ 	cursor: pointer;
+ 	display: none;
+ 	user-select: none;
+ 	margin-left: auto;
+ 	align-self: center;
+ 	padding-right: 30px;
+ }
+
+ .menu-toggle-button:hover {
+ 	color: #1188ff;
+ }
+
+ .menu-toggle {
+ 	opacity: 0;
+ 	pointer-events: none;
+ 	position: absolute;
+ }
+
+ /* Header */
+ /* Container holding the image and the text */
+ .banner img {
+ 	width: 100%;
+ }
+
+ .banner {
+ 	position: relative;
+ 	text-align: center;
+ }
+
+ /* Centered text */
+ .centered {
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+
+ 	font-size: 5em;
+ 	font-family: 'Long Cang', cursive;
+ 	text-shadow: 0px 2px 10px black;
+ }
+
+ .index-centered {
+ 	position: absolute;
+ 	top: 50%;
+ 	left: 50%;
+ 	transform: translate(-50%, -50%);
+
+ 	font-size: 3em;
+ 	font-family: 'Long Cang', cursive;
+ 	text-shadow: 0px 2px 10px black;
+ }
+
+ mark {
+ 	color: white;
+ 	background-color: rgba(0, 0, 0, 0.75);
+ 	padding-left: 25px;
+ 	padding-right: 25px;
+ }
+
+ /* Bottom left text */
+ /*.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}*/
+
+ /* Top left text */
+ /*.top-left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}*/
+
+ /* Top right text */
+ /*.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}*/
+
+ /* Bottom right text */
+ /*.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}*/
+
+ /* Homepage Styles */
+ .hmpage-sections {
+ 	background-color: white;
+ 	width: 90%;
+ 	margin: auto;
+ }
+
+.hmpage .responsive {
+	padding: 10px;
+	display: inline-block;
+}
+
+ .hmpage-sections h4 {
+ 	font-size: 20px;
+	 padding-left: 0.5%;
+ }
+
+.hmpage-recommend {
+	padding-bottom: 10px;
+}
+
+ h5{
+	color: black;
+	 font-family: 'Long Cang', cursive;
+	 font-size: 20px;
+	 font-weight: 500;
+	 padding-left: 10px;
+	 padding-top: 10px;
+}
+
+h6{
+	font-size: 15px;
+	font-weight: 100;
+	padding: 10px;
+}
+
+.country-area {
+	padding-bottom: 300px;
+}
+
+.article-area {
+	width: 75%;
+	margin: auto;
+}
+
+.article-area li {
+	padding-bottom: 50px;
+}
+
+.article-area recommends {
+}
+
+.button {
+  background-color: #1188ff;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.article-area {
+ 	background-color: white;
+ }
+
+ .article-area ul {
+ 	display: inline-block;
+ }
+
+ .article-area ul li {
+ 	display: flex;
+ }
+
+ .article-area ul li img {
+ 	/* Double its size. prevents the grid from shifting but still big enough for mobile view without switching image*/
+ 	max-width: 760px;
+ 	height: 100%;
+ 	padding-right: 25px;
+ }
+
+ .article-area ul li h4 {
+ 	font-size: 25px
+ }
+
+ .article-area ul li h5 {
+ 	font-size: 20px;
+ }
+
+ .article-area ul li p {
+ 	font-size: 15px;
+	 padding-top: 10px;
+	 text-align: justify;
+
+ }
+
+.article-area .card {
+		 max-width: 300px;
+	padding-right: 25px;
+}
+
+ /* Sidebars */
+
+ aside {
+ 	display: block;
+ 	background-color: white;
+ 	padding: 0%;
+ 	padding-left: 10%;
+ 	width: 15%;
+ }
+
+ #sidebar {
+ 	padding-left: 3%;
+ }
+
+ #sidebar ul {
+ 	list-style: none;
+ }
+
+ #sidebar ul li {
+ 	padding-top: 1em;
+ }
+
+ #sidebar ul li a {
+ 	text-decoration: none;
+ 	color: black;
+ }
+
+ #sidebar ul li a.active {
+ 	color: #1188ff;
+ }
+
+ #sidebar ul li a:hover {
+ 	color: #1188ff;
+ }
+
+ a.active {
+ 	font-weight: bold;
+ }
+
+ hr {
+ 	width: 100%;
+ 	padding-bottom: 1em;
+ 	border: none;
+ 	border-bottom: 2px solid #1188ff;
+ }
+
+ main {
+ 	display: inline-flex;
+ }
+
+ article {
+ 	padding-top: 10px;
+ 	padding-left: 5%;
+ 	width: 75%;
+ }
+
+ article .mobile-bottomnav {
+ 	visibility: hidden;
+ }
+
+ /* breadcrumb style*/
+ ul.breadcrumb {
+ 	padding: 10px 16px;
+ 	list-style: none;
+ 	background-color: #eee;
+ }
+
+ /* Display list items side by side */
+ ul.breadcrumb li {
+ 	display: inline;
+ 	font-size: 18px;
+ }
+
+ /* Add a slash symbol (/) before/behind each list item */
+ ul.breadcrumb li + li:before {
+ 	padding: 8px;
+ 	color: black;
+ 	content: "/\00a0";
+ }
+
+ /* Add a color to all links inside the list */
+ ul.breadcrumb li a {
+ 	color: #0275d8;
+ 	text-decoration: none;
+ }
+
+ /* Add a color on mouse-over */
+ ul.breadcrumb li a:hover {
+ 	color: #01447e;
+ 	text-decoration: underline;
+ }
+
+ /* Country Overview */
+ .generalinfo-box {
+ 	display: inline-flex;
+ }
+
+ .generalinfo-box li {
+ 	margin-right: 50px;
+ 	list-style: none;
+ }
+
+ .generalinfo-box h1 {
+ 	font-size: 15px;
+ 	padding-bottom: 10px;
+ }
+
+ .generalinfo-box h2 {
+ 	font-size: 20px;
+ 	padding-bottom: 10px;
+ }
+
+ .generalinfo-box p {
+ 	font-size: 15px;
+ }
+
+ /* Spacing for fontawesome stuff */
+ i {
+ 	padding: 5px;
+ }
+
+ /* Travel & phrases info title */
+ h3 {
+ 	color: black;
+ 	text-align: left;
+ 	font-size: 25px;
+ 	padding-bottom: 15px;
+ }
+
+ /* travel info */
+ .travelinfo-box {
+ 	display: inline-flex;
+ }
+
+ .travelinfo-box li {
+ 	margin-right: 25px;
+ 	list-style: none;
+ }
+
+ /* phrases info */
+ .phrases-box {
+ 	display: inline-flex;
+ 	list-style: none;
+ 	position: relative;
+ }
+
+ .phrases-box li {
+ 	display: block;
+ 	list-style: none;
+ 	padding-right: 50px;
+ }
+
+ .phrases-box li p:before {
+ 	content: "•";
+ 	padding-right: 15px;
+ }
+
+
+ /* Article spacing */
+ p,
+ ul,
+ ol {
+ 	font-size: 1em;
+ 	margin-bottom: 1em;
+ }
+
+
+ /* Article title */
+ h2 {
+ 	font-size: 50px;
+ 	line-height: 1em;
+ 	padding-bottom: 15px;
+ }
+
+ /* Article */
+ article,
+ 	{
+ 	text-align: left;
+ 	background-color: white;
+ 	float: left;
+ 	padding: 0%;
+ 	padding-left: 5%;
+ 	width: 100%
+ }
+
+ article h2 {
+ 	font-size: 40px;
+ }
+
+ article h3 {
+ 	font-size: 20px;
+ }
+
+ .recommends {
+ 	background-color: white;
+ }
+
+ .recommends ul {
+ 	display: inline-block;
+ }
+
+ .recommends ul li {
+ 	display: flex;
+ 	padding-bottom: 25px;
+ }
+
+ .recommends ul li img {
+ 	/* Double its size. prevents the grid from shifting but still big enough for mobile view without switching image*/
+ 	max-width: 760px;
+ 	height: 100%;
+ 	padding-right: 25px;
+ }
+
+ .recommends ul li h4 {
+ 	font-size: 35px
+ }
+
+ .recommends ul li h5 {
+ 	font-size: 20px;
+ }
+
+ .recommends ul li p {
+ 	font-size: 15px;
+ }
+
+
+
+ overview h1 {
+ 	padding-top: 2%;
+ 	font-size: 20px;
+ }
+
+ .article-image {
+ 	float: left;
+ 	width: 100%;
+ 	padding-bottom: 15px;
+ }
+
+ /*Reference grid styles*/
+ .refgrid-responsive {
+ 	padding-left: 5%;
+ }
+
+ .refgrid {
+ 	display: inline-table;
+ 	width: 19%;
+ 	padding-top: 1%;
+ 	padding-bottom: 1%;
+ }
+
+ .refgrid .gallery img {
+ 	width: 100%;
+ 	height: auto;
+ }
+
+ .refgrid .desc {
+	 font-family: 'Noto Sans', sans-serif;
+ 	padding: 10px;
+ 	font-size: 12px;
+ 	text-align: center;
+ 	background-color: white;
+ 	box-shadow: 0px -50px 25px 5px rgba(0, 0, 0, 0.1);
+ }
+
+ .refgrid .desc h1 {
+	 font-family: 'Long Cang', cursive;
+ 	font-size: 2.5em;
+	 font-weight: 100;
+ 	color: black;
+ 	padding-bottom: 5px;
+ }
+
+ .refgrid a {
+ 	font-size: 1em;
+ 	text-decoration: none;
+ 	color: #1188ff;
+ }
+
+ .refgrid a:hover {
+ 	text-decoration: underline;
+ }
+
+ /* Styles for about page */
+ .about-text {
+ 	width: 90%;
+ 	margin: auto;
+ 	display: inline-block;
+ }
+
+ .about-text h1 {
+ 	color: #1188ff;
+ 	text-align: center;
+ 	font-size: 2em;
+ 	font-family: 'Long Cang', cursive;
+ 	padding-bottom: 5px;
+ }
+
+ .about-text p {
+ 	text-align: justify;
+ 	text-indent: 2em;
+ }
+
+ .about-text img {
+ 	width: 30%;
+ 	float: left;
+ 	padding-right: 15px;
+ }
+
+ /* Destinations page styles */
+ .country-area h2 {
+ 	padding-top: 25px;
+ 	text-align: center;
+ }
+
+ .country-area h3 {
+ 	font-size: 15px;
+ 	text-align: center;
+ }
+
+ .country-area p {
+ 	text-align: left;
+ 	padding: 5px;
+ }
+
+ div.gallery {
+ 	border: 1px solid #ccc;
+ }
+
+ div.gallery:hover {
+ 	border: 1px solid #777;
+ }
+
+ div.gallery img {
+ 	width: 100%;
+ 	height: auto;
+ }
+
+ div.desc {
+ 	margin: 0;
+ 	padding-bottom: 5px;
+ 	text-align: center;
+ 	font-family: 'Long Cang', cursive;
+ 	font-size: 50px;
+ }
+
+ * {
+ 	box-sizing: border-box;
+ }
+
+ .responsive {
+ 	padding: 0 6px;
+ 	float: left;
+ 	width: 24.99999%;
+ }
+
+ @media only screen and (max-width: 700px) {
+ 	.responsive {
+ 		width: 49.99999%;
+ 		margin: 6px 0;
+ 	}
+ }
+
+ @media only screen and (max-width: 500px) {
+ 	.responsive {
+ 		width: 100%;
+ 	}
+ }
+
+ .clearfix:after {
+ 	content: "";
+ 	display: table;
+ 	clear: both;
+ }
+
+ /*Desktop footer*/
+ footer {
+ 	position: relative;
+ 	bottom: 0;
+ 	width: 100%;
+ 	background: #1A1A1A;
+ 	height: 75px;
+ 	display: inline-flex;
+ }
+
+ .footer-logo {
+ 	padding-top: 10px;
+ 	padding-left: 2%;
+ }
+
+ .footer-links {
+ 	align-content: center;
+ 	padding-top: 35px;
+ 	padding-left: 50px;
+ 	display: inline-flex;
+ }
+
+ .footer-links a {
+ 	font-size: 15px;
+ 	padding-right: 20px;
+ 	line-height: 0;
+ 	color: white;
+ 	text-decoration: none;
+ }
+
+ .footer-links a:hover {
+ 	color: #1188ff;
+ }
+
+ .footer-social {
+ 	padding-top: 18px;
+ 	text-align: right;
+ }
+
+ .footer-social a {
+ 	font-size: 25px;
+ 	color: white;
+ 	padding-right: 10px
+ }
+
+ .footer-social a:hover {
+ 	color: #1188ff;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Mobile view */
+
+ @media screen and (max-width: 750px) {
+
+ 	.imgbounds {
+ 		flex: 1;
+ 		margin: 0px 20px;
+ 	}
+
+ 	nav {
+ 		position: relative;
+ 		border-bottom: 1px solid #dddddd;
+ 		color: black;
+ 		padding-bottom: 50px;
+ 	}
+
+ 	nav > ul {
+ 		display: block;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    height: 100vh;
+    overflow-y: scroll;
+    z-index: 9999;
+    margin-bottom: 70px;
+ 	}
+
+ 	nav > ul li {
+ 		height: auto;
+ 		position: relative;
+ 		background: white;
+ 		width: 100%;
+ 		margin: 0px;
+ 		padding: 30px 40px;
+ 		box-sizing: border-box;
+ 		text-align: left;
+ 		border-bottom: 1px solid #dddddd;
+ 		display: block;
+ 	}
+
+ 	nav > ul li a {
+ 		color: black;
+ 		font-weight: 00;
+ 	}
+
+ 	nav > ul > li:last-child {
+ 		border-bottom: 0px;
+ 		padding-bottom: 130px;
+ 	}
+
+ 	.menu-toggle:not(:checked) ~ ul {
+ 		display: none;
+ 	}
+
+ 	input:checked + label {
+ 		color: #1188ff;
+ 	}
+
+ 	input:checked + label:before {
+ 		/* The mobile menu close X button */
+ 		font-family: "Font Awesome 5 Free";
+ 		content: "\f00d";
+ 		font-weight: 700;
+ 		font-size: 30px;
+ 	}
+
+ 	.menu-toggle-button {
+ 		display: inline-flex;
+ 	}
+
+ 	nav > ul li .mega-menu {
+ 		position: relative;
+ 		width: 100%;
+ 		padding: 0px;
+ 		border-top: 0px;
+ 		top: 0px;
+ 		display: inline-block;
+ 	}
+
+ 	nav > ul li:hover .mega-menu {
+ 		display: inline-flex;
+ 		flex-direction: column;
+ 	}
+
+ 	a.imgbounds {
+ 		margin-top: 0px;
+ 	}
+
+ 	nav > ul li:hover .mega-menu {
+ 		display: inline-block;
+ 	}
+
+ 	/* Resize the banner text to fit */
+ 	mark {
+ 		font-size: 0.7em;
+ 		padding-left: 5px;
+ 		padding-right: 5px;
+ 	}
+
+ 	.index-centered {
+ 		position: absolute;
+ 		top: 50%;
+ 		left: 50%;
+ 		transform: translate(-50%, -50%);
+
+ 		font-size: 30px;
+ 		font-family: 'Long Cang', cursive;
+ 		text-shadow: 0px 2px 10px black;
+ 	}
+
+
+
+ 	main {
+ 		display: block;
+ 	}
+
+
+ 	aside {
+ 		visibility: hidden;
+ 		position: absolute;
+ 	}
+
+ 	aside a {
+ 		text-decoration: none;
+ 	}
+
+ 	.recent-posts {
+ 		display: none;
+ 	}
+
+ 	.overview {
+ 		text-align: center;
+ 	}
+
+ 	hr {
+ 		padding: 0;
+ 	}
+
+ 	/* Article page width */
+ 	article {
+ 		width: 90%;
+ 	}
+
+ 	/* Article title */
+ 	h2 {
+ 		font-size: 50px;
+ 		line-height: 1em;
+ 		padding-bottom: 15px;
+ 	}
+
+
+ 	article .mobile-bottomnav {
+ 		visibility: visible;
+ 		list-style: none;
+ 		padding-top: 20px;
+ 	}
+
+ 	article .mobile-bottomnav li {
+ 		padding-top: 10px;
+ 		padding-bottom: 15px;
+ 	}
+
+ 	article .mobile-bottomnav li a {
+ 		text-decoration: none;
+ 		color: black;
+ 	}
+
+ 	article .mobile-bottomnav li a.active {
+ 		color: #1188ff;
+ 	}
+
+ 	article .mobile-bottomnav li a:hover {
+ 		color: #1188ff;
+ 	}
+
+ 	/*Scale down breadcrumbs*/
+ 	ul.breadcrumb li {
+ 		display: inline;
+ 		font-size: 15px;
+ 	}
+
+ 	/* Country Overview */
+ 	.generalinfo-box {
+ 		display: block;
+ 	}
+
+ 	/* travel info */
+ 	.travelinfo-box {
+ 		display: block;
+ 	}
+
+ 	/* phrases info */
+ 	.phrases-box {
+ 		display: block;
+ 	}
+
+ 	/*Article recommended list*/
+ 	.recommends ul {
+ 		display: block;
+ 	}
+
+ 	.recommends ul li {
+ 		display: block;
+ 	}
+
+ 	.recommends ul li img {
+ 		width: 100%;
+ 		height: auto;
+ 	}
+
+ 	/* Reference grid responsive single line */
+ 	.refgrid-responsive {
+ 		padding: 5%;
+ 	}
+
+ 	.refgrid {
+ 		width: 100%;
+ 	}
+
+ 	.refgrid figcaption {
+ 		padding: 10px;
+ 		font-size: 15px;
+ 	}
+
+ 	/* For About page styles */
+ 	.about-text {
+ 		padding-left: 5%;
+ 	}
+
+ 	.about-text img {
+ 		display: block;
+ 		width: 100%;
+ 		padding: 0;
+ 		padding-bottom: 10px;
+ 	}
+
+ 	/* mobile Footer */
+ 	footer {
+ 		position: relative;
+ 		display: block;
+ 		bottom: 0;
+ 		height: 400px;
+ 	}
+
+ 	.footer-logo,
+ 	.footer-links,
+ 	.footer-social {
+ 		text-align: center !important;
+ 		display: block;
+ 	}
+
+ 	.footer-logo {
+ 		padding-top: 30px;
+ 	}
+
+ 	.footer-links {
+ 		padding: 20px;
+ 	}
+
+ 	.footer-links a {
+ 		display: block;
+ 		padding: 5%;
+ 	}
+
+ 	.footer-social {
+ 		text-align: center;
+ 		font-size: 30px;
+ 	}
+
+ 	.footer-social a {
+ 		padding: 10%;
+ 	}
+
+ 
+
+ /*END OF MOBILE VIEW - DO NOT MOVE*/
